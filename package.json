@@ -1,8 +1,8 @@
 {
   "name": "marklin",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "homepage": "https://s4ter.github.io/marklin/",
+  "homepage": "https://S4ter.github.io/marklin",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /marklin/"
@@ -15,9 +15,16 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/S4ter/marklin.git/issues"
+    "url": "https://github.com/S4ter/marklin/issues"
   },
   "dependencies": {
-    "simplelightbox": "^2.13.0"
-  }
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
