@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarKlin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">MarKlin<br />Myju Myju</div>
+      <ul class="header__main">
+        <li class="header__main-link"><a href="/gallery">Galeria</a></li>
+        <li class="header__main-link"><a href="/services">Usługi</a></li>
+        <li class="header__main-link"><a href="/prices">Cennik</a></li>
+        <li class="header__main-link"><a href="/aboutus">O nas</a></li>
+        <li class="header__main-link"><a href="/contact">Kontakt</a></li>
+      </ul>
+      <button class="header__menu_btn">
+        <svg width="40px" height="40px">
+          <use href="images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </header>
+    <main>
+      <div class="container">
+        <div class="gallery">
+          <a href="images/photo1.jpg"
+            ><img src="images/photo1.jpg" alt="" title="" class="gallery__item"
+          /></a>
+          <a href="images/photo2.jpg"
+            ><img src="images/photo2.jpg" alt="" title="" class="gallery__item"
+          /></a>
+          <a href="images/photo3.jpg"
+            ><img src="images/photo3.jpg" alt="" title="" class="gallery__item"
+          /></a>
+        </div>
+        <div class="services">
+          <h1 class="services__header">CO OFERUJEMY:</h1>
+          <div class="services__container">
+            <div class="services__tab services__tab1">
+              <h3>Usługa 1</h3>
+              <svg width="80px" height="80px">
+                <use href="images/icons.svg#icon-home"></use>
+              </svg>
+              <p>___________________</p>
+              <p class="services__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                odit tenetur. Et atque quidem eligendi libero vitae ad itaque
+                quod accusamus deserunt debitis, nesciunt, ullam voluptatem
+                doloremque ipsa fuga in.
+              </p>
+              <button type="button" class="services__enlarge_btn">
+                <svg width="30px" height="30px">
+                  <use href="images/icons.svg#icon-enlarge"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="services__tab services__tab2">
+              <h3>Usługa 2</h3>
+              <svg width="80px" height="80px">
+                <use href="images/icons.svg#icon-paint"></use>
+              </svg>
+              <p>___________________</p>
+              <p class="services__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                odit tenetur. Et atque quidem eligendi libero vitae ad itaque
+                quod accusamus deserunt debitis, nesciunt, ullam voluptatem
+                doloremque ipsa fuga in.
+              </p>
+              <button type="button" class="services__enlarge_btn">
+                <svg width="30px" height="30px">
+                  <use href="images/icons.svg#icon-enlarge"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="services__tab services__tab3">
+              <h3>Usługa 3</h3>
+
+              <svg width="80px" height="80px">
+                <use href="images/icons.svg#icon-lifebuoy"></use>
+              </svg>
+              <p>___________________</p>
+              <p class="services__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                odit tenetur. Et atque quidem eligendi libero vitae ad itaque
+                quod accusamus deserunt debitis, nesciunt, ullam voluptatem
+                doloremque ipsa fuga in.
+              </p>
+              <button type="button" class="services__enlarge_btn">
+                <svg width="30px" height="30px">
+                  <use href="images/icons.svg#icon-enlarge"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/js/gallery.js" type="module"></script>
+  </body>
+</html>

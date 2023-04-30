@@ -1,0 +1,23 @@
+{
+  "name": "marklin",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://s4ter.github.io/marklin/",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /marklin/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S4ter/marklin.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/S4ter/marklin.git/issues"
+  },
+  "dependencies": {
+    "simplelightbox": "^2.13.0"
+  }
+}
