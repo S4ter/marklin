@@ -1,6 +1,22 @@
 .gallery {
+  position: relative;
+  top: 100svh;
+}
+.gallery__header {
+  text-align: center;
+  color: $mainColor;
+  font-size: clamp(3.4rem, 5vw, 5rem);
+  font-weight: 700;
+  line-height: 110%; /* 44px */
+  letter-spacing: 2.4px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .gallery__item {
-  width: 300px;
-  height: 300px;
+  display: block;
+
+  width: 100%;
+  height: auto;
 }

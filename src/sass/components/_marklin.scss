@@ -1,0 +1,27 @@
+.marklin {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  top: 100svh;
+}
+.marklin__header {
+  color: $mainColor;
+  font-size: clamp(3.4rem, 5vw, 5rem);
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.marklin__text {
+  margin: 0;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 134.5%; /* 32.28px */
+  letter-spacing: 1.536px;
+  padding-right: 10%;
+  padding-left: 10%;
+}

@@ -1,0 +1,134 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 100svh;
+  max-width: 767px;
+}
+.faq__header {
+  color: $mainColor;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-weight: 700;
+  line-height: 110%; /* 44px */
+  letter-spacing: 2.4px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.faq__questions_container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 0 10%;
+  width: 100%;
+}
+.faq__rectangle {
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  margin: 10px 0;
+}
+.faq__rectangle.active {
+  border: none;
+}
+
+.accordion {
+  width: 100%;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s;
+  text-wrap: wrap;
+}
+.accordion i {
+  font-size: 1.5rem;
+}
+.active,
+.accordion:hover {
+  background-color: #8fc4c346;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.panel {
+  padding: 0 1.2rem;
+  overflow: hidden;
+  display: none;
+}
+.panel p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+.accordion,
+.panel {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .faq {
+    max-width: 1000px;
+  }
+  .accordion {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.96px;
+  }
+  .accordion i {
+    font-size: 1.7rem;
+  }
+  .panel p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.7px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .faq {
+    max-width: 1279px;
+  }
+  .accordion {
+    padding: 1rem 1.3rem;
+    font-size: 1.3rem;
+    letter-spacing: 1.1px;
+  }
+  .accordion i {
+    font-size: 1.9rem;
+  }
+  .panel p {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    letter-spacing: 0.7px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .faq {
+    max-width: 1440px;
+  }
+  .accordion {
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 1.1px;
+  }
+  .accordion i {
+    font-size: 2rem;
+  }
+  .panel p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    letter-spacing: 0.75px;
+  }
+}

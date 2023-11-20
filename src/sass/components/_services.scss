@@ -1,40 +1,115 @@
-.services__header {
-  text-align: center;
+.services {
+  position: relative;
+  top: 100svh;
 }
 .services__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 50px;
 }
-.services__tab {
-  width: 300px;
-  height: 500px;
+.services__header {
+  color: $mainColor;
+  text-align: center;
+  font-size: clamp(3.4rem, 5vw, 5rem);
+  font-weight: 700;
+  line-height: 110%; /* 44px */
+  letter-spacing: 2.4px;
+  margin-top: 0;
+}
+.services__tab_description {
+  width: 320px;
+  height: 420px;
+  border-radius: 20px;
+  background-color: $mainColor;
+  z-index: 1;
+}
+.services__tab_container {
+  width: 320px;
+  height: 510px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  justify-content: flex-end;
   border-radius: 10%;
+  position: relative;
+}
+.services__tab_container .circlesvg {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 0;
+}
+.services__tab_container .paintsvg {
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  top: 100px;
+  left: 180px;
+  transform: rotate(15deg);
+  fill: rgba(255, 255, 255, 0.7);
+  box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.services__tab_header {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-family: Jost;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.68px;
+}
+.services__tab_description {
+  color: #fff;
+  padding: 106px 50px 0 50px;
 }
 .services__description {
-  line-height: 200%;
+  margin: 0;
+  text-align: center;
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 0.84px;
 }
-.services__tab1 {
-  border: 1px solid red;
-}
-.services__tab2 {
-  border: 1px solid blue;
-}
-.services__tab3 {
-  border: 1px solid green;
+.services__tab_underline {
+  position: relative;
+  bottom: 15px;
 }
 .services__enlarge_btn {
-  background: none;
   border-style: none;
+  padding: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #fff;
+  fill: $mainColor;
   position: relative;
-  top: 0px;
+  top: 30px;
 }
 .services__enlarge_btn:hover {
   cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .services__container {
+    gap: 100px;
+    max-width: 1000px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .services__container {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .services__container {
+    gap: 20px;
+    max-width: 1340px;
+  }
 }
