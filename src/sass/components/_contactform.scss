@@ -8,6 +8,7 @@
   position: relative;
   top: 100svh;
 }
+
 .contactform__header {
   color: $mainColor;
   text-align: center;
@@ -32,9 +33,9 @@
 .contactform__element label {
   color: #757575;
   font-family: Roboto;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.12px;
 }
 .contactform__input {
   border-radius: 4px;
@@ -49,6 +50,7 @@
   letter-spacing: 0.14px;
   padding: 12px;
   padding-left: 35px;
+  margin-bottom: 5px;
 
   &#message {
     height: 85.965px;
@@ -72,12 +74,47 @@
   width: 100px;
   height: 30px;
   border-style: none;
+  cursor: pointer;
 }
 .icon {
   fill: black;
   position: absolute;
   left: 8px;
-  bottom: 5px;
+  bottom: 10px;
   padding: 0;
   margin: 0;
+  width: 20px;
+  height: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contactform__input {
+    padding: 22px;
+    padding-left: 45px;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    &#message {
+      height: 150px;
+      padding: 15px;
+    }
+  }
+  .icon {
+    left: 12px;
+    bottom: 16px;
+    width: 25px;
+    height: 25px;
+  }
+  .contactform__element label {
+    font-size: 16px;
+    letter-spacing: 0.16px;
+  }
+  .contactform__button {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    letter-spacing: 1.44px;
+  }
+}
+@media screen and (min-width: 1000px) {
+}
+@media screen and (min-width: 1280px) {
 }
