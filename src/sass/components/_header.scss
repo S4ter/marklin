@@ -7,7 +7,7 @@
   padding: 0 2rem 0 2rem;
   align-items: center;
   position: absolute;
-  z-index: 1;
+  z-index: 99;
   width: 100%;
 }
 .header__main {
@@ -17,33 +17,72 @@
   width: 127px;
   height: 51px;
 }
-.header__menu_btn {
-  background: none;
-  border-style: none;
-  fill: rgb(0, 0, 0);
-  &:hover {
-    cursor: pointer;
-  }
-}
+
 .header__contact {
   display: none;
 }
 
-// .header__main {
-//   list-style: none;
-//   display: flex;
-//   flex-direction: row;
-//   gap: 50px;
-//   color: white;
-//   font-weight: 400;
-//   font-size: 24px;
-//   font-family: "Josefin Sans", sans-serif;
-// }
-// .header__main-link a {
-//   text-decoration: none;
-//   color: white;
-// }
-
+.hamburger {
+  position: relative;
+  display: block;
+  width: 45px;
+  cursor: pointer;
+  background: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #1e8a87;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -6px);
+}
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+.mobile_nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 70%;
+  min-height: 70%;
+  display: block;
+  z-index: 98;
+  background-color: #8fc4c3;
+  padding-top: 150px;
+  transition: 0.4s;
+  border-radius: 0 0 0 20px;
+}
+.mobile_nav.is-active {
+  left: 35%;
+}
+.mobile_nav a {
+  display: block;
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 3% 6%;
+  background-color: #1e8a87;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.mobile_nav a:hover {
+  background-color: #22a4a0;
+}
 @media screen and (min-width: 768px) {
   .header {
     height: 80px;
@@ -52,6 +91,9 @@
   .logo {
     width: 160px;
     height: 64px;
+  }
+  .mobile_nav a {
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -81,7 +123,10 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .header__menu_btn {
+  .hamburger {
+    display: none;
+  }
+  .mobile_nav {
     display: none;
   }
   .header__main {

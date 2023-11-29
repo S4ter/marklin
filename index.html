@@ -40,12 +40,11 @@
           <a href="/src"> <img src="./src/images/logo.png" class="logo" /></a>
 
           <ul class="header__main">
-            <li class="header__main-link"><a href="/gallery">Oferta</a></li>
-            <li class="header__main-link"><a href="/gallery">Galeria</a></li>
-            <li class="header__main-link"><a href="/services">Usługi</a></li>
+            <li class="header__main-link"><a href="#services">Usługi</a></li>
+            <li class="header__main-link"><a href="#galeria">Galeria</a></li>
             <li class="header__main-link"><a href="/prices">Cennik</a></li>
-            <li class="header__main-link"><a href="/aboutus">O nas</a></li>
-            <li class="header__main-link"><a href="/contact">Kontakt</a></li>
+            <li class="header__main-link"><a href="#aboutus">O nas</a></li>
+            <li class="header__main-link"><a href="#kontakt">Kontakt</a></li>
           </ul>
           <ul class="header__contact">
             <a href="mailto:name@gmail.com" class="header__info"
@@ -59,13 +58,17 @@
               >+48 123 456 789</a
             >
           </ul>
-          <button class="header__menu_btn">
-            <svg width="40px" height="40px">
-              <use href="./src/images/icons.svg#icon-menu"></use>
-            </svg>
+          <button class="hamburger">
+            <div class="bar"></div>
           </button>
         </header>
-
+        <nav class="mobile_nav">
+          <a href="#services">Usługi</a>
+          <a href="#galeria">Galeria</a>
+          <a href="/prices">Cennik</a>
+          <a href="#aboutus">O nas</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
         <div class="site_body">
           <div class="main__screen">
             <h1 class="main__screen_title">
@@ -86,7 +89,10 @@
             ><img src="images/photo3.jpg" alt="" title="" class="gallery__item"
           /></a> -->
           </div>
-          <div class="services">
+          <div class="services" id="services">
+            <div class="icon__hover" id="test">
+              <span>Dodatkowo oferujemy <b>malowanie</b></span>
+            </div>
             <h2 class="services__header">OFERUJEMY:</h2>
             <div class="services__container">
               <div class="services__tab_container">
@@ -116,9 +122,10 @@
                 </div>
               </div>
               <div class="services__tab_container">
-                <svg width="80px" height="75px" class="paintsvg">
+                <svg width="80px" height="75px" class="paintsvg" id="paintsvg">
                   <use href="./src/images/icons.svg#icon-paint"></use>
                 </svg>
+
                 <svg height="180" width="180" class="circlesvg">
                   <circle cx="90" cy="90" r="90" fill="red" />
                 </svg>
@@ -175,7 +182,7 @@
                 <svg height="180" width="180" class="circlesvg">
                   <circle cx="90" cy="90" r="90" fill="red" />
                 </svg>
-                <svg width="80px" height="75px" class="paintsvg">
+                <svg width="80px" height="75px" class="paintsvg" id="paintsvg2">
                   <use href="./src/images/icons.svg#icon-paint"></use>
                 </svg>
                 <div class="services__tab_description">
@@ -202,7 +209,7 @@
               </div>
             </div>
           </div>
-          <div class="gallery">
+          <div class="gallery" id="galeria">
             <h2 class="gallery__header">NASZE REALIZACJE</h2>
             <a href="./src/images/photo2.jpg"
               ><img
@@ -262,14 +269,14 @@
               </div>
             </div>
           </div>
-          <div class="marklin">
+          <div class="marklin" id="aboutus">
             <h2 class="marklin__header">MARKLIN</h2>
             <p class="marklin__text">
               Jakiś mocno przyciągający, wręcz trzymajacy za jaja opis firmy
               przez który na pewno będą chcieli przyjść
             </p>
           </div>
-          <div class="contactform">
+          <div class="contactform" id="kontakt">
             <h2 class="contactform__header">FORMULARZ KONTAKTOWY</h2>
             <form class="contactform__form">
               <div class="contactform__element">
